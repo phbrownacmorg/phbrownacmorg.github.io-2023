@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <title>HTML tags demo, CSC 235, Spring 2023</title>
+        <style>
+            table { border-collapse: collapse; }
+            th, td { border: thin solid; }
+        </style>
     </head>
     <body>
         <h1 id="tags">HTML tags</h1>
@@ -41,10 +45,50 @@
             must
             have    control.
         </pre> 
-        <blockquote>&lt;blockquote&gt; is good for long quotations, unlike this one.</blockquote>
+        <blockquote style="margin-bottom: 0">The &lt;blockquote&gt; tag is good for long quotations, unlike this one.</blockquote><p style="font-size: 85%; margin-top: 0; margin-left: 50%">&mdash;somebody quotable once said&hellip;</p>
         <h3>Geeks only</h3>
         <p>&lt;code&gt; encloses computer code.  &lt;var&gt; encloses variables, so:<br>
             <code><var>i</var> = <var>i</var> + 1</code>
         </p>
+        <h2>Lists</h2>
+        <ol>
+            <li>One (These items have a natural ordering.)</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ol>
+        <ul>
+            <li>Red (These items don't.)</li>
+            <li>Green</li>
+            <li>Blue</li>
+            <li>Gray</li>
+            <li>Brown</li>
+        </ul>
+        <dl>
+            <dt>Term</dt>
+            <dd>A <em>term</em> is an item in a definition list.</dd>
+            <dt>Definition</dt>
+            <dd>A <em>definition</em> is the writer's valiant attempt to make sense of the term.</dd>
+        </dl>
+
+        <h2>Tables</h2>
+        <table>
+            <caption>This afternoon's weather</caption>
+            <thead>
+                <tr><th rowspan="2">Date</th><th rowspan="2">Time</th><th colspan="4">Conditions</th></tr>
+                <tr><th>Temperature</th><th>Wind</th><th>Humidity</th><th>Barometer</th></tr>
+            </thead>
+            <tbody>
+                <tr><td rowspan="6">Feb. 7, 2023</td><td>2:15 PM</td><td>64&deg; F</td><td>SW 6 MPH</td><td>28%</td><td>30.29" Hg</td></tr>
+                <tr><td>1:55 PM</td><td>63&deg; F</td><td>SW 6 MPH</td><td>27%</td><td>30.30" Hg</td></tr>
+                <tr><td>1:15 PM</td><td>63&deg; F</td><td>WSW 12 MPH</td><td>27%</td><td>30.31" Hg</td></tr>
+                <tr><td>12:55 PM</td><td>63&deg; F</td><td>SW 8 MPH</td><td>30%</td><td>30.32" Hg</td></tr>
+                <tr><td>12:35 PM</td><td>61&deg; F</td><td>SW 8 MPH</td><td>34%</td><td>30.33" Hg</td></tr>
+                <tr><td>12:15 PM</td><td>61&deg; F</td><td>S 7 MPH</td><td>34%</td><td>30.35" Hg</td></tr>
+            </tbody>
+        </table>
+        <h2>Images</h2>
+        <img style="width: 100%" src="https://www.american-rails.com/images/00912487235617824091hj5186209878.jpg"
+                alt="Large electric locomotive">
     </body>
 </html>
